@@ -68,6 +68,8 @@ public class UserControllerTest {
     public void test_findByUserName() {
         when(userRepository.findByUsername(testUser.getUsername())).thenReturn(testUser);
 
+
+
         final ResponseEntity<User> response2 =
                 userController.findByUserName(testUser.getUsername());
         Assertions.assertEquals(200, response2.getStatusCodeValue());
