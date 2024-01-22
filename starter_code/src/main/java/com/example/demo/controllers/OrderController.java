@@ -29,8 +29,7 @@ public class OrderController {
 	
 	@Autowired
 	private OrderRepository orderRepository;
-	
-	
+
 	@PostMapping("/submit/{username}")
 	public ResponseEntity<UserOrder> submit(@PathVariable String username) {
 		log.info("Submitting order for user {}", username);
