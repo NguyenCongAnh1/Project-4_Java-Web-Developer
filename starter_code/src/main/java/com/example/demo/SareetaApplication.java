@@ -20,6 +20,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
 public class SareetaApplication {
 
+
+	
 	private static final Logger log = LogManager.getLogger(SareetaApplication.class);
 	@Bean
 	public BCryptPasswordEncoder bCryptPasswordEncoder(){
